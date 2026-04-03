@@ -11,88 +11,221 @@
       font-family: Georgia, serif;
       background-color: #fafaf8;
       color: #222;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      padding: 3rem 1.5rem;
     }
 
     .contenedor {
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
     }
 
-    .acento {
-      color: #0aa3bb;
+    /* ENCABEZADO */
+    .encabezado {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .encabezado img {
+      width: 120px;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
       font-size: 2rem;
       font-weight: normal;
       letter-spacing: 0.05em;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
+
+    .acento { color: #0aa3bb; }
 
     .subtitulo {
-      font-size: 0.95rem;
-      color: #888;
-      letter-spacing: 0.15em;
+      font-size: 0.85rem;
+      color: #999;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      margin-bottom: 3rem;
     }
 
-    p {
-      font-size: 1rem;
+    /* SECCIONES */
+    .seccion {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #e8e8e4;
+    }
+
+    .seccion:last-child {
+      border-bottom: none;
+    }
+
+    .seccion h2 {
+      font-size: 0.75rem;
+      font-weight: normal;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #0aa3bb;
+      margin-bottom: 1rem;
+    }
+
+    .seccion p {
+      font-size: 0.95rem;
       line-height: 1.8;
-      color: #555;
-      margin-bottom: 3rem;
+      color: #444;
+      margin-bottom: 0.75rem;
     }
 
-    .proyectos {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 3rem;
+    /* PROYECTOS */
+    .proyecto {
+      margin-bottom: 1.75rem;
     }
 
-    .proyectos a {
+    .proyecto h3 {
+      font-size: 1.05rem;
+      font-weight: normal;
+      margin-bottom: 0.25rem;
+    }
+
+    .proyecto h3 a {
+      color: #222;
+      text-decoration: none;
+      border-bottom: 1px solid #0aa3bb;
+    }
+
+    .proyecto h3 a:hover {
+      color: #0aa3bb;
+    }
+
+    .proyecto .descripcion {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .redes {
+      font-size: 0.8rem;
+    }
+
+    .redes a {
       color: #0aa3bb;
       text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      margin-right: 0.75rem;
     }
 
-    .proyectos a:hover {
-      border-bottom-color: #0aa3bb;
+    .redes a:hover {
+      text-decoration: underline;
     }
 
+    /* SOMOS PARTE DE */
+    .aliado {
+      margin-bottom: 1.25rem;
+    }
+
+    .aliado h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 0.2rem;
+    }
+
+    .aliado h3 a {
+      color: #222;
+      text-decoration: none;
+      border-bottom: 1px solid #0aa3bb;
+    }
+
+    .aliado h3 a:hover { color: #0aa3bb; }
+
+    .aliado .descripcion {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* PIE */
     .pie {
+      text-align: center;
       font-size: 0.8rem;
       color: #bbb;
       letter-spacing: 0.1em;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
   <div class="contenedor">
 
-    <h1><span class="acento">Casa</span> Imaginada</h1>
-    <p class="subtitulo">Cooperativa Cultural · Córdoba</p>
+    <!-- ENCABEZADO -->
+    <div class="encabezado">
+      <img src="logo-casa-imaginada.svg" alt="Logo Casa Imaginada">
+      <h1><span class="acento">Casa</span> Imaginada</h1>
+      <p class="subtitulo">Cooperativa Cultural · Córdoba</p>
+    </div>
 
-    <p>Producimos narrativas en diversos soportes y lenguajes.<br>
-    Apostamos por los derechos de las infancias, la cultura libre<br>
-    y la construcción comunitaria.</p>
+    <!-- MANIFIESTO -->
+    <div class="seccion">
+      <h2>Nuestro manifiesto</h2>
+      <p>Somos una cooperativa cultural de trabajo dedicada a la producción y difusión de las narrativas que más nos gustan en múltiples soportes y lenguajes.</p>
+      <p>Apostamos por la lectura en todas sus formas y formatos. Hacemos libros ilustrados, objeto, digitales. Fanzines, audiolibros, ratitos de lectura, historias libres. Radio, ficciones digitales, producciones audiovisuales.</p>
+      <p>Apostamos por trabajar como nos gusta. Disfrutando el día a día, explorando las posibilidades, dando lugar al juego, armando red junto a nuestra gente querida y admirada, buscándole la vuelta a los recursos y compartiendo siempre para que lo que hacemos esté al alcance de todes.</p>
+      <p>Donde sea que vamos, como las tortugas o los caracoles, llevamos nuestra casa imaginada con nosotres. Y nuestra casa, donde les esperamos, obvio.</p>
+      <div class="redes">
+        <a href="https://www.instagram.com/casa.imaginada/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@casa.imaginada" target="_blank">YouTube</a>
+        <a href="https://t.me/casaimaginada" target="_blank">Telegram</a>
+        <a href="https://whatsapp.com/channel/0029Vajff4m6WaKkzAmXsV29" target="_blank">WhatsApp</a>
+      </div>
+    </div>
 
-    <div class="proyectos">
-      <a href="#">Ediciones de la Terraza</a>
-      <a href="#">Traficante de Libros</a>
-      <a href="#">Artilugio</a>
-      <a href="#">Casa Rodante</a>
+    <!-- PROYECTOS -->
+    <div class="seccion">
+      <h2>Nuestros proyectos</h2>
+
+      <div class="proyecto">
+        <h3><a href="https://edicioneslaterraza.com.ar/" target="_blank">Ediciones de la Terraza</a></h3>
+        <p class="descripcion">Editorial de libros ilustrados con licencias Creative Commons · desde 2012</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/edicionesdelaterraza/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/EdicionesDeLaTerraza" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/@EdicionesdelaTerraza" target="_blank">YouTube</a>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <h3>Traficante de Libros</h3>
+        <p class="descripcion">Librería de libros ilustrados · venta en sede y ferias · desde 2014</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/traficantedelibros/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/traficantesdelibros" target="_blank">Facebook</a>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <h3>Casa Rodante</h3>
+        <p class="descripcion">Talleres y servicios editoriales para organizaciones educativas y comunitarias</p>
+      </div>
+
+      <div class="proyecto">
+        <h3>Artilugio</h3>
+        <p class="descripcion">Productos gráficos artesanales · cuadernos, láminas, pósters</p>
+      </div>
+    </div>
+
+    <!-- TIENDA -->
+    <div class="seccion">
+      <h2>Nuestra tienda</h2>
+      <p><a href="https://casaimaginada.empretienda.com.ar/" target="_blank" style="color:#0aa3bb;">casaimaginada.empretienda.com.ar</a></p>
+    </div>
+
+    <!-- SOMOS PARTE DE -->
+    <div class="seccion">
+      <h2>Formamos parte de</h2>
+
+      <div class="aliado">
+        <h3><a href="https://librebase.org.ar/" target="_blank">Libre Base</a></h3>
+        <p class="descripcion">Organización colectiva por la cultura y el software libre · Córdoba</p>
+      </div>
+
+      <div class="aliado">
+        <h3><a href="https://www.instagram.com/brujasbucaneras/" target="_blank">Brujas Bucaneras</a></h3>
+        <p class="descripcion">Juego-aquelarre-club de lectura libre y gratuito · desde 2019</p>
+      </div>
     </div>
 
     <p class="pie">Sitio en construcción · 2026</p>
